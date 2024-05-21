@@ -23,7 +23,7 @@ app.use('/', signUpPost);
 app.use('/', productRoute)
 
 const port = process.env.PORT ;
-
+       
 app.get('/', (req,res)=>{
     res.send("Hello world");
 })
