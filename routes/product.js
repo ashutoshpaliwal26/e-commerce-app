@@ -4,8 +4,8 @@ const {productControllerForListing, productController} = require('../controllers
 const path = require('path')
 const filePath = path.join(__dirname, "../index.html");
 
-router.get("/product", productController);
+router.post("/product", productController);
 
-router.post("/product", productControllerForListing);
+// router.post("/product", productControllerForListing);
 
 module.exports = router;

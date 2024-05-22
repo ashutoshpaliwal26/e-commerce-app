@@ -7,8 +7,6 @@ const bodyParser = require('body-parser');
 
 const path = require('path');
 
-
-
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cors());
 
