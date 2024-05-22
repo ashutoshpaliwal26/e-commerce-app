@@ -7,8 +7,6 @@ const bodyParser = require('body-parser');
 
 const path = require('path');
 
-
-
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cors());
 
@@ -23,7 +21,7 @@ app.use('/', signUpPost);
 app.use('/', productRoute)
 
 const port = process.env.PORT ;
-
+       
 app.get('/', (req,res)=>{
     res.send("Hello world");
 })

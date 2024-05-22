@@ -2,7 +2,8 @@ const product = require('../models/productmodel');
 
 const productController = async(req,res)=>{
     try{
-        const dataApi = await product.find({});
+        const {productId} = req.body;
+        const dataApi = await product.findOne({productId});
         res.json(dataApi);
     }catch(err){
         console.log(err);
